@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Template</title>
+  <style>
+    .text-chunk {
+      font-size: 22px;
+      margin-bottom: 32px;
+      text-align: center;
+      background-color: grey; 
+      padding: 10px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+ <header style="text-align: center;">
+        <h1>Cayden's PFD Blog</h1>
+ </header>
+  <div class="text-chunk">
+    <h1>Week 1</h1>
+    <p>This week during PFD, I encountered the question our sponsors have set for my class, data collection. <br>
+        To suit the assigned task, I came up with the idea for SEER, a tracking device capable of sending location data <br>
+        in real-time to a database and pinging nearby devices to find places with high and low traffic on routes. <br><br>
+
+        The SEER was made to streamline the data-collecting process of security guards; while also being lightweight and seamless.<br>
+        I thought of the idea for SEER as I heard the current system for tracking security guards is QR code scanning, which is clunky<br> 
+        and unable to capture the exact steps taken fully. <br><br>
+        
+        I was fortunate enough to have my idea elected as one of the top 5 and assembled a team capable of bringing <br>
+        the vision to life together, which included me, my friend Jia Xian, Eddie and Jerel. I wanted a team that each brought<br>
+        something to the table, thus I picked one team member that fell into a different category. <br><br>
+        
+        Jia Xian was confident in his coding ability, while Eddie prided himself on his UI/UX skills, lastly, Jerel was a <br>
+        full-stack developer. After discussion, I was given the role of product master as I was the one who came up with the <br>
+        concept and was deemed to have the clearest vision of what it should be, while Jia Xian was given the scrum master role. <br>
+</p>
+  </div>
+
+  <div class="text-chunk">
+    <h1>Week 2</h1>
+    <p> <img src="images/Seer_Product_Box.png" alt="SEER" width="400" height="600"> <br><br>
+        
+        This week, we discussed further the feasibility of the initial idea for SEER, we looked online for a device <br> 
+        that would suit our needs, and the criteria were as follows, built-in GPS, wifi and Bluetooth capabilities,<br> 
+        as well as easily programmable. <br><br>
+  
+        We required a GPS to track the wearer, with wifi access to broadcast the location data to a database. <br>
+        Lastly, Bluetooth was for us to possibly allow the device to ping gentries set up between levels of a building to <br>
+        indicate which floor the wearer is on or is ascending or descending to. <br><br>
+       
+        This week we fully visualised what features our product should ideally possess and methods on how to achieve this <br>
+        functionality. To this end, on top of having data transmitted in real-time to a database, we would also seek to create a <br>
+        program that could plot out the route taken by wearers using the location data from the database. We also floated the idea <br>
+        of creating gentries to track which floor a guard could be on. <br><br>
+
+        <img src="images/Project_Plan.png" alt="SEER" width="400" height="400"> <br><br>
+       
+        As for how we planned to fulfil this suite of promised features, we would utilise DynamoDB to store our location data which <br>
+        could then be pulled from by managers to feed into our route plotting program which would use MapPlotLib to visualise the data. <br>
+        Lastly for gentries we would use Bluetooth to ping gentries to update the level wearers are on in the database. <br><br>
+       </p>
+       
+  </div>
+
+  <div class="text-chunk">
+    <h1>Week 3</h1>
+    <p>This week my team received its ESP32 NodeMCU, however, unfortunately, our GPS was not yet ready, thus this week was spent mostly<br> 
+        getting ready for the GPS, another thing we were also waiting on was our DynamoDB which similarly was not usable yet. <br><br>
+     
+        <img src="images/Materials.jpg" alt="SEER" width="400" height="400"> <br><br>
+
+        Due to the lack of ability to make much headway in the project, I do not have much to report on the progress this week, except <br>
+        Jia Xian was working on understanding how to use the ESP32 MCU, performing several tests on it to explore how to use it in later weeks. <br>
+        As we could not work on the ESP32 at the same time, I could only oversee the work as Jerel had taken the other task this week, which <br>
+        tried to get the MapPlotLib working. <br><br> 
+      </p>
+  </div>
+
+  <div class="text-chunk">
+    <h1>Week 4</h1>
+    <p>
+        Another unfortunate event occurred this week with both the GPS and DynamoDB still not being available, the GPS <br>
+        was caught in transit while the status of our DynamoDB was unknown. This hampered progress as it meant we had to <br>
+        get everything running during the two-day hackathon on week 5, without having any time beforehand to prepare.<br><br>
+   
+        <img src="images/GPS_Map.png" alt="SEER" width="400" height="400"> <br><br>
+
+        However, some good news this week was that Jerel had managed to get MatPlotLib working, using fabricated data as our GPS <br>
+        had not yet arrived to create a graph of the route taken by a theoretical security guard in the Ngee Ann Polytechnic premises. <br>
+        It's able to read a csv file containing the location data and creates a plot based on the data within it. The graph is also <br>
+        able to be saved as a png file for future reference. <br><br>
+      
+    </p>
+  </div>
+
+  <div class="text-chunk">
+    <h1>Week 5</h1>
+    <p>This week was the Hackathon, and our GPS system had finally arrived, meaning that Jia Xian could finally begin work on the ESP32. <br>
+        However, we were still unable to use the DynamoDB, as it was not ready yet, meaning we had to cut this functionality for the <br>
+        presentation on friday.<br><br>
+
+        Me and Eddie were tasked with creating an accompanying website for our product, which would be used to display the data from the <br>
+        database, when it was able to be set up. I also designed a new Icon for the SEER product, as the previous design we had used we could <br>
+        no longer find. <br><br>
+
+        <img src="images/newSeer_Product_Box.png" alt="SEER" width="400" height="400"> <br><br>
+
+        A piece of good news was that we had already finished our presentation slides weeks in advance, and we were able to focus on the <br>
+        product itself, rather than the presentation.  <br><br>
+
+        Jia Xian had attempted to get the GPS to work, however it was unable to output any data, and we were unable to figure out why. <br>
+        This meant that we were unable to get the GPS to work in time for the presentation, and we had to cut it from the presentation. <br>
+        We only had the MatPlotLib to show for our efforts, and was not able to show it with our website as it still was in development <br>
+        by friday. <br><br>
+
+        As the product owner, I deemed that despite all this we were still able to show the potential of our product, as the most impressive <br>
+        part of the product was Jerel's progam being able to plot out routes using only location data. Thus I was still hopeful that we could <br>
+        hold a successful presentation, and even win first place within our class. <br><br>
+
+        On Friday I introduced the product to the class, and explained the features of the product, and how it would be used. I shared my vision <br>
+        of the product, and how it would be used to streamline the data collection process for security guards. I also explained how the product <br>
+        would be used to track the location of security guards, and how it would be used to plot out routes taken by security guards. <br><br>
+
+        <img src="images/Problem_Statement.png" alt="SEER" width="600" height="600"> 
+        <img src="images/Elevator_Pitch.png" alt="SEER" width="600" height="600"> 
+
+        Jia Xian and Jerel also explained their parts of the project, and how they contributed to the project. Jia Xian explained how he was <br>
+        tried to get the ESP32 to work, and how it would be used to track the location of the security guards. Jerel explained how he was able <br>
+        to get MatPlotLib to work, and performed a live demonstration of the program to our sponsor. <br><br>
+
+        We were unable to win as our project was not as complete as one of the other's in my class, however I was still proud of my team's <br>
+        efforts, and I was glad that we were able to complete the project to the best of our abilities, especially with us having only two <br>
+        days to work with the actual GPS and still being unable to access the database. <br>
+  
+
+
+
+
+    </p>
+  </div>
+</body>
+</html>
